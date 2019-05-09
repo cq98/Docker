@@ -34,6 +34,8 @@ Swarm: Deploy application into a cluster, run on multiple machines, join into a 
 	- docker swarm init --advertise-addr 192.168.99.100:2376 [Make myvm1 the manager]
 	- only manager can deploy
 - myvm2: worker
-	- docker swarm join --token SWMTKN-1-44iq42dodz8qh5dicr6rp63edbervjrjcg529g875u88lax448-eczcnsy1usuvp25e0ea77f0hv 192.168.99.100:2377
+	- docker swarm join --token SWMTKN-1-44iq42dodz8qh5dicr6rp63edbervjrjcg529g875u88lax448-eczcnsy1usuvp25e0ea77f0hv 192.168.99.100:2377 [*must be 2377 not 2376]
 	2377 - port, 192.168.99.100 - myvm ip
 - docker-machine ssh : que to VMs
+- docker-machine ssh <VM> "Type command here"
+- STUCK PART:docker stack deploy -c docker-compose.yml getstartedlab: Get image rejected, status is Shutting Down, have issues removing redundant stack, Solutions: Look at the video below and follow how the person type
