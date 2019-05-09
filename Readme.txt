@@ -43,4 +43,7 @@ Swarm: Deploy application into a cluster, run on multiple machines, join into a 
 PART 5
 Stack: Group of interrelated services that share dependencies and can be orchestrated and scaled together
 - Add free visualizer service to docker-compose.yml
--
+	- with visualizer: 192.168.102:8080 [Port is 8080]
+- Add Redis Service
+	- redis always run on manager, same filesystem
+	- redis can access arbitrary directory in host's file system as /data
