@@ -3,6 +3,7 @@
 - status has mixture of Shutting Down and Ready 
 	- have issues removing redundant stack (yet to solve)
 	- Needed: Running Status 
-		- Got Ready instead of Running due to missing repo/image (not to close terminal that contains previous command from Part 1 & 2, if not, need to introduce the image/repo again)
+		- Got Ready instead of Running due to missing friendlyhello that needs to published into registry (Can be avoide  by not closing terminal that contains previous command
+		from Part 1 & 2, if not, need to introduce the friendlyhello again)
 - use docker-machine ssh <VM name> "Type command here"
 	- if not, use new terminal for the use of VM only
