@@ -38,7 +38,7 @@ Swarm: Deploy application into a cluster, run on multiple machines, join into a 
 	2377 - port, 192.168.99.100 - myvm ip
 - docker-machine ssh : que to VMs
 - docker-machine ssh <VM> "Type command here"
-- STUCK PART:docker stack deploy -c docker-compose.yml getstartedlab: Get image rejected, status is Shutting Down, have issues removing redundant stack, Solution: Look at the video below and follow how the person type, but yet to figure out how to remove redundant stacks
+- STUCK PART:docker stack deploy -c docker-compose.yml getstartedlab: Get image rejected, status is Shutting Down, have issues removing redundant stack, Solution: Look at the video below and follow how the person type, but yet to figure out how to remove redundant stacks [missing docker-machine scp docker-compose.yml myvm1:~ when asked to use deploy]
 
 PART 5
 Stack: Group of interrelated services that share dependencies and can be orchestrated and scaled together
@@ -47,3 +47,4 @@ Stack: Group of interrelated services that share dependencies and can be orchest
 - Add Redis Service
 	- redis always run on manager, same filesystem
 	- redis can access arbitrary directory in host's file system as /data
+	- ./data directory on manage : docker-machine ssh myvm1 "mkdir ./data"
